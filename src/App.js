@@ -4,12 +4,12 @@ import * as React from "react";
 const home = "/react-memory-game";
 
 const cardImages = [
-  { src: home + "/img/helmet-1.png", matched: false },
-  { src: home + "/img/potion-1.png", matched: false },
-  { src: home + "/img/ring-1.png", matched: false },
-  { src: home + "/img/scroll-1.png", matched: false },
-  { src: home + "/img/shield-1.png", matched: false },
-  { src: home + "/img/sword-1.png", matched: false },
+  { src: home + "/img/pikachu.png", matched: false },
+  { src: home + "/img/balbasaur.png", matched: false },
+  { src: home + "/img/charmander.png", matched: false },
+  { src: home + "/img/squirtle.png", matched: false },
+  { src: home + "/img/jigglypuff.png", matched: false },
+  { src: home + "/img/evee.png", matched: false },
 ];
 
 function App() {
