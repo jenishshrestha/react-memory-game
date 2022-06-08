@@ -1,13 +1,15 @@
 import "./App.css";
 import * as React from "react";
 
+const home = "/react-memory-game";
+
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: home + "/img/helmet-1.png", matched: false },
+  { src: home + "/img/potion-1.png", matched: false },
+  { src: home + "/img/ring-1.png", matched: false },
+  { src: home + "/img/scroll-1.png", matched: false },
+  { src: home + "/img/shield-1.png", matched: false },
+  { src: home + "/img/sword-1.png", matched: false },
 ];
 
 function App() {
@@ -57,8 +59,6 @@ function App() {
     }
   }, [choiceOne, choiceTwo]);
 
-  // console.log(cards);
-
   return (
     <div className="App">
       <h1>Magic Match</h1>
@@ -82,7 +82,7 @@ function App() {
               <div className="flip-card-back">
                 <img
                   className="back"
-                  src="/img/cover.png"
+                  src={home + "/img/cover.png"}
                   alt="card back"
                   onClick={() => handleChoice(card)}
                 />
